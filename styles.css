@@ -1,0 +1,64 @@
+/* font import */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --soft-red: hsl(10, 79%, 65%);
+    --cyan: hsl(186, 34%, 60%);
+    --dark-brown: hsl(25, 47%, 15%);
+    --medium-brown: hsl(28, 10%, 53%);
+    --cream: hsl(27, 66%, 92%);
+    --pale-orange: hsl(33, 100%, 98%);
+}
+
+html {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+}
+
+body {
+    background-color: var(--cream);
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: inline-flexbox;
+    
+    
+}
+
+.card {
+    max-width: 400px;
+    margin: auto;
+
+}
+
+.top {
+    background-color: var(--soft-red);
+    justify-content: space-between;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+}
+
+.my-balance {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.balance {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.d-flex {
+    display: flex;
+}
