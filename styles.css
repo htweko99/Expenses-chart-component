@@ -35,7 +35,7 @@ body {
 }
 
 .card {
-    max-width: 400px;
+    max-width: 450px;
     margin: auto;
 
 }
@@ -62,3 +62,90 @@ body {
 .d-flex {
     display: flex;
 }
+
+/* chart starts */
+.bottom {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    
+    
+}
+
+.chart-header {
+    font-size: 1.5rem;
+}
+
+.chart {
+    gap: 5px;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid var(--medium-brown);
+    padding-bottom: 20px;
+}
+
+.data {
+    flex-direction: column;
+    align-items: center;
+    width: 50px;
+}
+
+.amount {
+    background-color: var(--dark-brown);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 5px;
+    order: 0;
+    visibility: hidden;
+    /* display: none; */
+}
+
+.bar {
+    width: 90%;
+    height: 60px;
+    background-color: var(--soft-red);
+    border-radius: 5px;
+    order: 1;    
+}
+
+.day {
+    order: 2;
+}
+
+.bar:hover  + .amount {
+    visibility: visible;
+}
+
+.bar:hover {
+    opacity: .9;
+}
+
+.bottom-footer {
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+
+.bottom-footer small {
+    font-size: 14px;
+}
+
+.total-balance {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.increase-usage {
+    text-align: end;
+}
+
+.increase-percent {
+    font-weight: bold;
+}
+
+
+
+
