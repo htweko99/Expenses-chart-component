@@ -29,7 +29,7 @@ body {
 .container {
     width: 100vw;
     height: 100vh;
-    display: inline-flexbox;
+
     
     
 }
@@ -117,6 +117,7 @@ body {
 .bar.current-day {
     background-color: var(--cyan);
 }
+
 
 
 .bottom-footer {
