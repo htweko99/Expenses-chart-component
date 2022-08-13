@@ -35,7 +35,7 @@ body {
 }
 
 .card {
-    max-width: 450px;
+    max-width: 350px;
     margin: auto;
 
 }
@@ -68,8 +68,6 @@ body {
     background-color: white;
     padding: 20px;
     border-radius: 20px;
-    
-    
 }
 
 .chart-header {
@@ -88,18 +86,25 @@ body {
 .data {
     flex-direction: column;
     align-items: center;
-    width: 50px;
+    max-width: 40px;
+}
+
+.data:hover .amount {
+    visibility: visible;
+}
+
+.data:hover .bar {
+    opacity: .85;
 }
 
 .amount {
     background-color: var(--dark-brown);
+    font-size: 14px;
     color: white;
     border-radius: 5px;
-    padding: 5px;
+    padding: 3px;
     margin-bottom: 5px;
-    order: 0;
     visibility: hidden;
-    /* display: none; */
 }
 
 .bar {
@@ -107,20 +112,12 @@ body {
     height: 60px;
     background-color: var(--soft-red);
     border-radius: 5px;
-    order: 1;    
 }
 
-.day {
-    order: 2;
+.bar.current-day {
+    background-color: var(--cyan);
 }
 
-.bar:hover  + .amount {
-    visibility: visible;
-}
-
-.bar:hover {
-    opacity: .9;
-}
 
 .bottom-footer {
     margin-top: 20px;
@@ -146,6 +143,18 @@ body {
     font-weight: bold;
 }
 
+@media (min-width: 470px) {
+    .card {
+        max-width: 450px;
+    }
 
+    .data {
+        max-width: 50px;
+    }
+
+    .amount {
+        font-size: 1rem;
+    }
+}
 
 
